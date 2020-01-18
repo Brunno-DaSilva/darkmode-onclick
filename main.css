@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+:root {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+  --base: #2b498b;
+  --dark-font-color-title: #173f5f;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+
+  --foreground: var(--details-light-blue);
+  --background: var(--dark-font-color-title);
+}
+
+.darkmode {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #d3d3e8;
+  --base: #2b498b;
+  --dark-font-color-title: #173f5f;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+
+  --foreground: var(--dark-font-color-title);
+  --background: var(--details-light-blue);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "helvetica neue", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*******************************
+*  START - Navigation Style    
+*******************************/
+
+.navbar {
+  height: 30px;
+  background-color: var(--background);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--foreground);
+  padding: 20px !important;
+  z-index: 20;
+}
+
+.navbar img {
+  width: 25px;
+  height: auto;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--foreground);
+  letter-spacing: 1px;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: "Muli", sans-serif;
+}
+.navbar a:hover {
+  color: var(--laranja-orange);
+}
+
+.navbar-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*******************************
+*    END - Navigation Style    
+*******************************/
+/*
+*
+*/
+/*******************************
+*    Main Container Style
+*******************************/
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.item-one,
+.item-two {
+  width: 45%;
+  min-height: 50vh;
+  background-color: var(--foreground);
+  color: var(--background);
+  margin: 5%;
+  z-index: 8;
+  opacity: 0.95;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 4px;
+}
+
+.left-content h3 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.left-content p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/*******************************
+*     Footer and SVG
+*******************************/
+svg {
+  margin-bottom: -35px;
+  z-index: 5;
+}
+footer {
+  font-family: "Shadows Into Light Two", cursive;
+  min-height: 30vh;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: var(--nave-light-blue);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+footer span {
+  color: var(--farting-yellow);
+}
+footer img {
+  width: 90px;
+  height: auto;
+}
+
+footer .info-Bruno {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-Bruno p {
+  color: var(--light-font-color-title);
+  font-size: 1.8rem;
+}
+
+.info-Bruno a {
+  color: var(--light-font-color-title);
+  padding: 10px;
+}
+
+.info-Bruno a:hover {
+  color: var(--farting-yellow);
+}
