@@ -92,7 +92,8 @@ body {
   font-size: 1rem;
   font-family: "Muli", sans-serif;
 }
-.navbar a:hover {
+.navbar a:hover,
+.dark-mode-toggle:hover {
   color: var(--laranja-orange);
 }
 
@@ -103,6 +104,24 @@ body {
   align-items: center;
 }
 
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1.2em;
+  color: var(--foreground);
+  border: none;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+}
+
+.dark-mode-toggle i {
+  font-size: 2rem;
+}
 /*******************************
 *    END - Navigation Style    
 *******************************/
@@ -149,21 +168,6 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.3rem;
   text-align: left;
-}
-
-.dark-mode-toggle {
-  position: absolute;
-  z-index: 100;
-  top: 1em;
-  right: 1em;
-  color: var(--foreground);
-  border: 2px solid currentColor;
-  padding: 4px;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
 }
 
 /*******************************
