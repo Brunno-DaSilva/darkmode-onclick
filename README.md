@@ -1,4 +1,4 @@
-# DarkMode onClick
+# DarkMode onClick :last_quarter_moon:
 
 ##### Tools:
 
