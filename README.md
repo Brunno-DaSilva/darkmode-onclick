@@ -12,4 +12,4 @@
 ```
 
 
-#### Demo: https://dasilvabrunotexas.github.io/darkmode-onclick/
+### Demo: https://brunno-dasilva.github.io/darkmode-onclick/
